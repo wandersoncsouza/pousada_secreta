@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro";
+}
+
+/* HEADER */
+
+REFAZER
+
+
+/* MAIN */
+.content{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/img-fundo.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  background-color: rgba(0, 128, 0, 0.5);
+
+}
+
+.container h1, .container p{
+  color: #fff;
+  letter-spacing: 2px;
+}
+.container h1{
+  font-size: 38px;
+}
