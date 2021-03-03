@@ -5,6 +5,12 @@
   font-family: "Source Sans Pro";
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* HEADER */
 
 header{
@@ -46,18 +52,12 @@ nav ul li a{
   width: 100vw;
   height: 100vh;
   background-image: url(../img/img-fundo.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
   width: 500px;
   height: 200px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: 1px solid white;
   background-color: rgba(0, 128, 0, 0.5);
 
@@ -73,10 +73,84 @@ nav ul li a{
 }
 
 .description{
-  border: 1px solid red;
   margin: 30px 0;
-  display: flex;
+}
+
+.description, .welcome, #rota, #sobre{
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 2em .2em;
+}
+h2, figcaption{
+  text-transform: uppercase;
+  line-height: 4em;
+}
+
+figcaption{
+  font-size: 22px;
+}
+
+.welcome p{
+  line-height: 2em;
+}
+
+.quartos{
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+}
+
+ .quartos figure{
+  flex-direction: column;
+  border-bottom: 4px solid lightgreen;
+  margin-top: 1em;
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  margin: .5em
+}
+
+.about{
+  flex-direction: column;
+  padding: 2.5em;
+  margin: 0 auto;
+}
+
+.about p{
+  word-spacing: 4px;
+}
+
+.cards{
+  max-width: 100%;
+}
+
+.box_descriptions{
+  border: 3px solid gray;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.box_descriptions div{
+  margin: 0 auto;
+  border: 2px solid yellow;
+  flex: 1 1 45%;
+  margin: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.box_descriptions figure{
+  border: 1px solid blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box_descriptions figure img{
+  position: relative;
+  float: right;
+  width: 25%;
+  height: 80px;
 }
