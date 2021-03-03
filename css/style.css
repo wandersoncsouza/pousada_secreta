@@ -15,7 +15,7 @@
 
 header{
   width: 100%;
-  height: 60px;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,6 +25,10 @@ header{
   justify-content: space-between;
   padding: 15px 30px;
   border-bottom: 1px solid gray;
+}
+
+header div span, nav ul li a{
+  font-size: 32px;
 }
 
 a{
@@ -127,30 +131,42 @@ img{
 }
 
 .box_descriptions{
-  border: 3px solid gray;
-  display: flex;
   flex-flow: row wrap;
 }
 
 .box_descriptions div{
   margin: 0 auto;
-  border: 2px solid yellow;
   flex: 1 1 45%;
   margin: 10px;
   padding: 15px;
   position: relative;
 }
 
-.box_descriptions figure{
-  border: 1px solid blue;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .box_descriptions figure img{
   position: relative;
   float: right;
   width: 25%;
-  height: 80px;
+  height: 100px;
+}
+
+footer{
+  background-color: rgba(0, 128, 0, 0.5);
+  font-size: 20px;
+  color: #fff;
+}
+.contato{
+  width: 100%;
+  height: 100px;
+}
+.contato div{
+  flex: 1 1 200px;
+  margin: 15px;
+  padding: 5px;
+
+}
+.copyright{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
 }
