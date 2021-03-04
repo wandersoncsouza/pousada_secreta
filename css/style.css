@@ -28,7 +28,7 @@ header{
 }
 
 header div span, nav ul li a{
-  font-size: 32px;
+  font-size: 1.5em;
 }
 
 a{
@@ -52,10 +52,11 @@ nav ul li a{
 
 /* MAIN */
 .content{
-  margin-top: 60px;
+  margin-top: 40px;
   width: 100vw;
   height: 100vh;
   background-image: url(../img/img-fundo.jpg);
+  background-size: cover;
 }
 
 .container {
@@ -64,6 +65,8 @@ nav ul li a{
   flex-direction: column;
   border: 1px solid white;
   background-color: rgba(0, 128, 0, 0.5);
+  flex: 1 1 50%;
+  margin: 15%;
 
 }
 
@@ -118,8 +121,8 @@ img{
 
 .about{
   flex-direction: column;
-  padding: 2.5em;
-  margin: 0 auto;
+  padding: 5px;
+  margin: 0 3px;
 }
 
 .about p{
@@ -137,9 +140,10 @@ img{
 .box_descriptions div{
   margin: 0 auto;
   flex: 1 1 45%;
-  margin: 10px;
+  margin: 5px;
   padding: 15px;
   position: relative;
+  align-self: center;
 }
 
 .box_descriptions figure img{
@@ -149,9 +153,11 @@ img{
   height: 100px;
 }
 
+/* FOOTER */
+
 footer{
   background-color: rgba(0, 128, 0, 0.5);
-  font-size: 20px;
+  font-size: 1em;
   color: #fff;
 }
 .contato{
@@ -159,7 +165,7 @@ footer{
   height: 100px;
 }
 .contato div{
-  flex: 1 1 200px;
+  flex: 1 1 45%;
   margin: 15px;
   padding: 5px;
 
@@ -169,4 +175,29 @@ footer{
   height: 50px;
   padding: 10px;
   text-align: center;
+}
+
+@media screen and (max-width:768px){
+   header{
+     flex-direction: column;
+     padding: 7px;
+     height: 80px;
+  }
+
+  .Logo span{
+    font-size: 30px;
+
+  }
+
+  .Logo span, nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box_descriptions div{
+    flex: 2 2 100%;
+  }
+  
+
+
 }
